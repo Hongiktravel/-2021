@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView
+from django.views.generic import ListView ,DetailView
 from .models import Post
 
 
@@ -7,7 +7,11 @@ class PostList(ListView):
     model = Post
     ordering = '-pk'
 
-# def index(request):
+
+class PostDetail(DetailView):
+    model = Post
+
+# def index(request):    #ListView가 얘를 대체
 #     posts = Post.objects.all().order_by('-pk')
 #     return render(
 #         request,
@@ -17,13 +21,13 @@ class PostList(ListView):
 #         }
 #     )
 
-def single_post_page(request,pk): #request는 항상오는거
-    post = Post.objects.get(pk=pk)
-
-    return render(
-        request,
-        'blog/single_page.html',
-        {
-            'post':post,
-        }
-    )
+# def single_post_page(request,pk): #request는 항상오는거  ,DetailView가 얘를대체
+#     post = Post.objects.get(pk=pk)
+#
+#     return render(
+#         request,
+#         'blog/post_detail.html',
+#         {
+#             'post':post,
+#         }
+#     )
