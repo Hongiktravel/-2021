@@ -10,3 +10,14 @@ def index(request):
             'abc': posts,
         }
     )
+
+def single_post_page(request,pk): #request는 항상오는거
+    post = Post.objects.get(pk=pk)
+
+    return render(
+        request,
+        'blog/single_page.html',
+        {
+            'post':post,
+        }
+    )

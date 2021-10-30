@@ -9,3 +9,6 @@ class Post(models.Model):#파이썬에서 제공하는 모델 사용
     updated_at=models.DateTimeField(auto_now=True)#수정됬을때는 수정된시간만 저장, 추가됬을때는 저절로 입력
     def __str__(self):
         return f'[{self.pk}]{self.title}'
+
+    def get_absolute_url(self):
+        return f'/blog/{self.pk}'
