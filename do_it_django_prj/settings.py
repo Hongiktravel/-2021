@@ -38,10 +38,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'allauth.socialaccount.providers.google',
     'blog',
     'single_pages',
     'crispy_forms',
     'markdownx',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
 ]
 
 MIDDLEWARE = [
@@ -133,3 +138,14 @@ MEDIA_URL='/media/'
 MEDIA_ROOT= os.path.join(BASE_DIR, '_media')
 
 CRISPY_TEMPLATE_PACK='bootstrap4'
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
+
+SITE_ID = 1
+
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = 'none' #검증은 굳이 안할것
