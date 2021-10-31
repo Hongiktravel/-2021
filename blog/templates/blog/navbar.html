@@ -52,13 +52,13 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-md-6 col-sm-12">
-                        <a role="button" href="{% provider_login_url 'google' %}" class="btn btn-outline-dark btn-block btn-small"><i class="fab fa-google"></i> Log in with Google</a>
+                        <a role="button" href="{% provider_login_url 'google' %}" type="button" class="btn btn-outline-dark btn-block btn-small"><i class="fab fa-google"></i> Log in with Google</a>
 
-                        <button type="button" class="btn btn-outline-dark btn-block btn-small"><i class="fas fa-users"></i> Log in with username</button>
+                        <a role="button" href="/accounts/login/" type="button" class="btn btn-outline-dark btn-block btn-small"><i class="fas fa-users"></i> Log in with username</a>
 
                     </div>
                     <div class="col-md-6 col-sm-12">
-                        <button type="button" class="btn btn-outline-dark btn-block btn-small"><i class="fas fa-envelope-open-text"></i> Sign up with E-mail</button>
+                        <a role="button" href="/accounts/signup/" type="button" class="btn btn-outline-dark btn-block btn-small"><i class="fas fa-envelope-open-text"></i> Sign up with E-mail</a>
 
                     </div>
                 </div>
