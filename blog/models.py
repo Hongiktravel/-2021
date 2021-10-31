@@ -1,8 +1,12 @@
 from django.db import models
+from markdown import markdown
+from markdownx.models import MarkdownxField
+from markdownx.utils import markdown
+
 
 class Post(models.Model):#파이썬에서 제공하는 모델 사용
     title=models.CharField(max_length=50)#장고에서 제공하는기능 (보통 짧은 내용)
-    content = models.TextField()
+    content = MarkdownxField()
 
     file_upload= models.FileField(upload_to='blog/files/%Y/%m/%d/',blank=True)
     head_image = models.ImageField(upload_to='blog/images/%Y/%m/%d/',blank=True)
@@ -14,3 +18,6 @@ class Post(models.Model):#파이썬에서 제공하는 모델 사용
 
     def get_absolute_url(self):
         return f'/blog/{self.pk}'
+
+    def get_content_markdown(self):
+        return markdown(self.content)

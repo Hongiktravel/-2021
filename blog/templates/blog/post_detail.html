@@ -54,7 +54,7 @@
                 <figure class="mb-4"><img class="img-fluid rounded" src="{{post.head_image.url}}" alt="{{post.title}}" /></figure>
                 <!-- Post content-->
                 <hr>
-                <p>{{ post.content }}</p>
+                <p>{{ post.get_content_markdown | safe }}</p>
                 <hr>
             <!-- Comments section-->
             <section class="mb-5">

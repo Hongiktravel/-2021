@@ -95,7 +95,7 @@
                         <div class="card-body">
                             <div class="small text-muted">{{p.created_at}}</div>
                             <h2 class="card-title h4">{{p.title}}</h2>
-                            <p class="card-text">{{ p.content}}</p>
+                            <p class="card-text">{{ p.get_content_markdown | truncatewords_html:45 | safe}}</p>
                             <a class="btn btn-primary" href="{{ p.get_absolute_url }}">Read more →</a>
                             <a href="#">작성자명 쓸 위치</a>
                         </div>
