@@ -2,6 +2,7 @@ from django.db import models
 from markdown import markdown
 from markdownx.models import MarkdownxField
 from markdownx.utils import markdown
+import os
 
 
 class Post(models.Model):#파이썬에서 제공하는 모델 사용
@@ -21,3 +22,9 @@ class Post(models.Model):#파이썬에서 제공하는 모델 사용
 
     def get_content_markdown(self):
         return markdown(self.content)
+
+    def get_file_name(self):
+        return os.path.basename(self.file_upload.name)
+
+    def get_file_ext(self):
+        return self.get_file_name().split('.')[-1]
