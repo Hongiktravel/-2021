@@ -13,6 +13,9 @@
     <!-- Post header-->
     <!-- Post title-->
     <h1 class="fw-bolder mb-1">{{post.title}}</h1>
+    {% if post.hook_text %}
+            <h5 class="text-muted">{{ post.hook_text }}</h5>
+        {% endif %}
     <!--Author-->
     <p class="lead">
         by

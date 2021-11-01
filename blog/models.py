@@ -7,8 +7,8 @@ import os
 
 class Post(models.Model):#파이썬에서 제공하는 모델 사용
     title=models.CharField(max_length=50)#장고에서 제공하는기능 (보통 짧은 내용)
+    hook_text = models.CharField(max_length=100, blank=True)
     content = MarkdownxField()
-
     file_upload= models.FileField(upload_to='blog/files/%Y/%m/%d/',blank=True)
     head_image = models.ImageField(upload_to='blog/images/%Y/%m/%d/',blank=True)
     created_at = models.DateTimeField(auto_now_add=True) # 데이터베이스에 이런것들을 저장할수있도록 가능
