@@ -19,7 +19,7 @@
         {% endif %}
         <p class="card-text">{{ p.get_content_markdown | truncatewords_html:45 | safe}}</p>
         <a class="btn btn-primary" href="{{ p.get_absolute_url }}">Read more →</a>
-        <a href="#">작성자명 쓸 위치</a>
+        <a href="#">{{ p.author | upper }}</a>
     </div>
 </div>
 {% endfor %}
