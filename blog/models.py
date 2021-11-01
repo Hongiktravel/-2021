@@ -15,6 +15,9 @@ class Category(models.Model):
     class Meta:   # 복수형 이름 바꾸기
         verbose_name_plural='Categories'
 
+    def get_absolute_url(self):
+        return f'/blog/category/{self.slug}/'
+
 class Post(models.Model):#파이썬에서 제공하는 모델 사용
     title=models.CharField(max_length=50)#장고에서 제공하는기능 (보통 짧은 내용)
     hook_text = models.CharField(max_length=100, blank=True)
