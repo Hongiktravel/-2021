@@ -6,6 +6,10 @@
     {% if category %}
         <span class="badge badge-secondary float-right">{{category}}</span>
     {% endif %}
+    {% if tag %}
+            <span class="badge badge-light float-right">
+                <i class="fas fa-tags"></i>{{tag}} ({{tag.post_set.count}})</span>
+    {% endif %}
 </h1>
 
 {% for p in post_list %}
@@ -28,6 +32,16 @@
             <h5 class="text-muted">{{ p.hook_text }}</h5>
         {% endif %}
         <p class="card-text">{{ p.get_content_markdown | truncatewords_html:45 | safe}}</p>
+
+        {% if p.tags.exists %}
+            <i class="fas fa-tags"></i>
+            {% for tag in p.tags.iterator %}
+                <a href="{{ tag.get_absolute_url}}" class="badge bg-light text-dark">{{ tag }}</a>
+            {% endfor %}
+            <br/>
+            <br/>
+        {% endif %}
+
         <a class="btn btn-primary" href="{{ p.get_absolute_url }}">Read more →</a>
         <a href="#">{{ p.author | upper }}</a>
     </div>
