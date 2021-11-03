@@ -1,13 +1,18 @@
 {% extends 'blog/base.html' %}
 
 {% block main_area %}
+{% if user.is_authenticated %}
+{% if user.is_superuser or user.is_staff %}
+<a type="button" href="/blog/create_post/" class="btn btn-info btn-sm float-right"><i class="fas fa-pen"></i>&nbsp;&nbsp; Primary</a>
+{% endif %}
+{% endif %}
 <h1>
     Blog
     {% if category %}
-        <span class="badge badge-secondary float-right">{{category}}</span>
+    <span class="badge badge-secondary float-right">{{category}}</span>
     {% endif %}
     {% if tag %}
-            <span class="badge badge-light float-right">
+    <span class="badge badge-light float-right">
                 <i class="fas fa-tags"></i>{{tag}} ({{tag.post_set.count}})</span>
     {% endif %}
 </h1>
@@ -16,9 +21,9 @@
 <!-- Blog post-->
 <div class="card mb-4" id="post-{{p.id}}">
     {% if p.head_image %}
-        <a href="#!"><img class="card-img-top" src={{p.head_image.url}} alt={{p.title}} /></a>
+    <a href="#!"><img class="card-img-top" src={{p.head_image.url}} alt={{p.title}} /></a>
     {% else %}
-                <a href="#!"><img class="card-img-top" src=https://picsum.photos/seed/{{p.id}}/600/200 alt={{p.title}} /></a>
+    <a href="#!"><img class="card-img-top" src=https://picsum.photos/seed/{{p.id}}/600/200 alt={{p.title}} /></a>
     {% endif %}
     <div class="card-body">
         <div class="small text-muted">{{p.created_at}}</div>
@@ -29,17 +34,17 @@
         {% endif %}
         <h2 class="card-title h4">{{p.title}}</h2>
         {% if p.hook_text %}
-            <h5 class="text-muted">{{ p.hook_text }}</h5>
+        <h5 class="text-muted">{{ p.hook_text }}</h5>
         {% endif %}
         <p class="card-text">{{ p.get_content_markdown | truncatewords_html:45 | safe}}</p>
 
         {% if p.tags.exists %}
-            <i class="fas fa-tags"></i>
-            {% for tag in p.tags.iterator %}
-                <a href="{{ tag.get_absolute_url}}" class="badge bg-light text-dark">{{ tag }}</a>
-            {% endfor %}
-            <br/>
-            <br/>
+        <i class="fas fa-tags"></i>
+        {% for tag in p.tags.iterator %}
+        <a href="{{ tag.get_absolute_url}}" class="badge bg-light text-dark">{{ tag }}</a>
+        {% endfor %}
+        <br/>
+        <br/>
         {% endif %}
 
         <a class="btn btn-primary" href="{{ p.get_absolute_url }}">Read more →</a>
