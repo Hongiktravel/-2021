@@ -55,3 +55,9 @@ class Post(models.Model):#파이썬에서 제공하는 모델 사용
 
     def get_file_ext(self):
         return self.get_file_name().split('.')[-1]
+
+    def get_avatar_url(self):
+        if self.author.socialaccount_set.exists():
+            return self.author.socialaccount_set.first().get_avatar_url()
+        else:
+            return f'https://doitdjango.com/avatar/id/353/e4e3873e73e7edb5/svg/{self.author.email}/'

@@ -19,10 +19,20 @@
                 </li>
 
             </ul>
+
             <ul class="navbar-nav ">
+
                 {% if user.is_authenticated %}
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {% if user.socialaccount_set.first.get_avatar_url %}
+                            <img class="rounded-circle" width="25px" src="{{user.socialaccount_set.first.get_avatar_url}}" alt="{{user.username}}">
+                        {% else %}
+                            <img class="rounded-circle" src=" https://doitdjango.com/avatar/id/353/e4e3873e73e7edb5/svg/{{user.email}}"
+                                  width="25px"
+                                 alt="{{user.username}}">
+                        {% endif %}
+                        &nbsp;
                         {{user.username}}
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
