@@ -1,4 +1,5 @@
 from django.core.exceptions import PermissionDenied
+from django.db.models import Q
 from django.shortcuts import render, redirect
 from django.utils.text import slugify
 from django.views.generic import ListView, DetailView, CreateView, UpdateView
@@ -135,6 +136,22 @@ def tag_page(request, slug):
         }
     )
 
+class PostSearch(PostList):
+    paginate_by = None
+
+    def get_queryset(self):
+        q= self.kwargs['q']
+        post_list= Post.objects.filter(#쿼리하는 방법 filter내부에 Q 사용가능 (내장함수)
+            Q(title__contains=q) | Q(tags__name__contains=q)
+        ).distinct() #중복방지
+        return post_list
+
+    def get_context_data(self, **kwargs):
+        context = super(PostSearch, self).get_context_data()
+        q=self.kwargs['q']
+        context['search_info'] = f'Search: {q} ({self.get_queryset().count()})'
+
+        return context
 
 # def index(request):    #ListView가 얘를 대체
 #     posts = Post.objects.all().order_by('-pk')
