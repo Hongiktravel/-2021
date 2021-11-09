@@ -1,4 +1,4 @@
-const url = 'https://yourtravel.netlify.app/';
+const url = {% static 'single_pages/images/' %};
 
 function setShare(){
   var resultImg = document.querySelector('#resultImg');
