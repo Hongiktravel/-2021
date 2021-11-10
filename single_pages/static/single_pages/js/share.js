@@ -1,11 +1,12 @@
-const url = {% static 'single_pages/images/' %};
+
+const url = "./images/";
 
 function setShare(){
   var resultImg = document.querySelector('#resultImg');
   var resultAlt = resultImg.firstElementChild.alt;
   const shareTitle = '여행지 추천 결과';
   const shareDes = infoList[resultAlt].name;
-  const shareImage = url + 'img/image-' + resultAlt + '.png';
+  const shareImage = url + 'image-' + resultAlt + '.png';
   const shareURL = url + 'page/result-' + resultAlt + '.html';
 
   Kakao.Link.sendDefault({
