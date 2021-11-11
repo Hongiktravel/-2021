@@ -13,12 +13,14 @@ function calResult(){
 
 function setResult(){
   let point = calResult();
+  const results= document.querySelector('.results')
+  result.innerHTML=point;
   const resultName = document.querySelector('.resultname');
   resultName.innerHTML = infoList[point].name;
 
   var resultImg = document.createElement('img');
   const imgDiv = document.querySelector('#resultImg');
-  var imgURL = "{% static 'single_pages/images/image-' %}" + point + '.png';
+  var imgURL = "../images/image-" + point + '.png';
   resultImg.src = imgURL;
   resultImg.alt = point;
   resultImg.classList.add('img-fluid');
@@ -44,6 +46,8 @@ function goResult(){
 function addAnswer(answerText, qIdx, idx){
   var a = document.querySelector('.answerBox');
   var answer = document.createElement('button');
+  var image = document.createElement('img');
+  image.setAttribute("src","../images/계곡.jpg");
   answer.classList.add('answerList');
   answer.classList.add('my-3');
   answer.classList.add('py-3');

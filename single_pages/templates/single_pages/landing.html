@@ -17,11 +17,11 @@
     </style>
 <!--     <link href="{% static 'single_pages/css/landing.css' %}" rel="stylesheet" type="text/css">-->
 
-  <link rel="stylesheet" href="./css/default.css">
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/qna.css">
-  <link rel="stylesheet" href="./css/animation.css">
-  <link rel="stylesheet" href="./css/result.css">
+  <link rel="stylesheet" href="{% static 'single_pages/css/default.css' %}">
+  <link rel="stylesheet" href="{% static 'single_pages/css/main.css' %}">
+  <link rel="stylesheet" href="{% static 'single_pages/css/qna.css' %}">
+  <link rel="stylesheet" href="{% static 'single_pages/css/animation.css' %}">
+  <link rel="stylesheet" href="{% static 'single_pages/css/result.css' %}">
     <style>
         body{
             background-color: #87CEFA;
@@ -33,8 +33,8 @@
 <div class="container">
 <section id ="main" class="mx-auto my-5 py-5 px-3">
     <div class="container">
-        <div class="row justify-content-between mt-5">
-            <div class="col-lg-2 ">
+        <div class="row justify-content-between mt-1">
+            <div class="col-lg-3 ">
 
                 <div class="card mt-5">
                               <div class="card-body">
@@ -60,7 +60,7 @@
                 </div>
 
             </div>
-            <div class="col-lg-8 mx-5 mt-5 text-light">
+            <div class="col-lg-7 mx-5 mt-5">
                 <h1>나에게 맞는 여행지 추천</h1>
 
                 <p>당신에게 꼭 맞는 여행지를 추천해드리겠습니다! <br>
@@ -96,13 +96,14 @@
 
     </section>
 
-  <section id="result" class="mx-auto my-auto px-3 py-5">
+  <section id="result" class="mx-auto my-auto px-5 py-3">
 
       <h1>당신의 여행지는?!</h1>
+      <a type="button" href="./about_me/" class="btn btn-info btn-sm float-right"></a>
       <div class="resultname">
 
       </div>
-      <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+      <div id="resultImg" class="my-auto col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
 
       </div>
       <div class="resultDesc">
@@ -114,7 +115,7 @@
     <script src="{% static 'single_pages/js/share.js' %}"></script>
  <script src="{% static 'single_pages/js/data.js' %}"></script>
 </div>
-<div class="fixed-bottom">
+<div class="fixed-bottom mt-5">
     {% include 'blog/footer.html' %}
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

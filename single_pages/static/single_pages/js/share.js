@@ -1,5 +1,5 @@
 
-const url = "./images/";
+const url = "../images/";
 
 function setShare(){
   var resultImg = document.querySelector('#resultImg');

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>About 정유석</title>
+    <link href="{% static 'blog/bootstrap/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/9470a50b12.js" crossorigin="anonymous"></script>
+    <link href="{% static 'single_pages/css/about_me.css' %}" rel="stylesheet" type="text/css">
+    <style>
+        body{
+            background-color: #87CEFA;
+
+        }
+
+        * {
+            font-family: 'Jua', sans-serif;
+
+        }
+    </style>
+
+</head>
+<body>
+{% include 'blog/navbar.html' %}
+    <section>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>전라북도 군산시</h1>
+                    <br>
+                    <p>
+                        #은파호수공원 #월명공원 #선유도 #이성당 #해망굴 #근대역사박물관 <br>
+                        #새만금방조제 #시간여행마을 #동국사 #증동호떡 #복성루짬뽕
+                        <br>
+                        <br>
+                        1930년대 우리나라 근대역사를 고스란히 간직한 도시 군산. 근대문화유산 투어 코스를 따라 걷다보면 곳곳에 남아있는<br>
+                        일본식 주택과 근대건축물들을 쉽게 볼 수 있다. 2.5km 길이의 오래된 철도가 놓인 경암동 철길마을은 출사지로도 유명.<br>
+                        우리나라에서 가장 오래된 빵집, 전국 5대 짬뽕 맛집, 70년 역사의 호떡집 등 군산 맛집 먹방 여행도 추천한다.
+                    </p>
+
+                </div>
+                <div class="col-lg-4">
+                    <a href="https://korean.visitkorea.or.kr/detail/rem_detail.do?cotid=bd315444-ccce-42b3-8faf-7b660fe0d010&con_type=10500">
+                        <img src="{% static 'single_pages/images/군산/군산지도.png' %}" width="400" height="400">
+                    </a>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        위 그림을 눌러보세요!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="bg-light margin-for-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>군산 즐길거리</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#군산1">
+                    <img class="card-img=top" src="{% static 'single_pages/images/군산/은파호수공원.jpg' %}" width="350" height=234>
+                    <div class="card-body">
+                        <h5 class="card-title">은파호수공원</h5>
+                        <p>#가족여행 #연인과함께 #힐링 #은파국민관광지</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#군산2">
+                    <img class="card-img=top" src="{% static 'single_pages/images/군산/군산중동호떡.jpg' %}" width="350" height=234">
+                    <div class="card-body">
+                        <h5 class="card-title">군산중동호떡</h5>
+                        <p>#군산맛집 #가족코스 #도심여행 #이성당</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#군산3">
+                    <img class="card-img=top" src="{% static 'single_pages/images/군산/해물짬뽕.jpg' %}" width="350" height=234">
+                    <div class="card-body">
+                        <h5 class="card-title">복성루해물짬뽕</h5>
+                        <p>#전국5대짬뽕 #군산맛집 #짬뽕맛집</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="군산1" tabindex="-1" aria-labelledby="군산1ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="군산1ModalLabel">군산 은파호수공원</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="row">
+              <div class="col-lg-7">
+                  <img class="img-fluid" src="{% static 'single_pages/images/군산/은파호수공원.jpg' %}" width="350" height=234">
+              </div>
+              <div class="col-lg-5">
+                  <p>은파호수공원은 호수를 중심으로 자전거 타기, 연꽃 자생지 등 자연을 그대로 즐길 수 있는 아름다운 공원이다.
+                      특히 은파 물빛다리의 야경은 다른 곳에서 보기힘든 오색찬란한 풍경을 연출한다. 무엇보다 오랜 전설이 깃든 은적사나 옥구향교의 고즈넉함을 빼놓을 수 없다.
+                  </p>
+              </div>
+          </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="군산2" tabindex="-1" aria-labelledby="군산2ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="군산2ModalLabel">군산중동호떡</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="row">
+              <div class="col-lg-7">
+                  <img class="img-fluid" src="{% static 'single_pages/images/군산/군산중동호떡.jpg' %}" width="350" height="234">
+              </div>
+              <div class="col-lg-5">
+                  <p>군산은 명물 맛집으로도 유명한 도시다. 복성루의 해물짬뽕과 70년 된 중동호떡집의 호떡 맛보는 것을 빼먹지 말자.
+                      줄서야 하는 번거로움이 있지만 웰빙 푸드의 고소 단백한 맛은 그만한 가치를 할 것이다. 돌아올 때는 이성당의 앙금빵 사오는 것도 재미를 더한다.
+                  </p>
+              </div>
+          </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="군산3" tabindex="-1" aria-labelledby="군산3Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="군산3Label">복성루해물짬뽕</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="row">
+              <div class="col-lg-7">
+                  <img class="img-fluid" src="{% static 'single_pages/images/군산/해물짬뽕.jpg' %}" width="350" height=234>
+              </div>
+              <div class="col-lg-5">
+                  <p>군산은 명물 맛집으로도 유명한 도시다. 복성루의 해물짬뽕과 70년 된 중동호떡집의 호떡 맛보는 것을 빼먹지 말자.
+                      줄서야 하는 번거로움이 있지만 웰빙 푸드의 고소 단백한 맛은 그만한 가치를 할 것이다. 돌아올 때는 이성당의 앙금빵 사오는 것도 재미를 더한다.</p>
+              </div>
+          </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="fixed-bottom">
+    {% include 'blog/footer.html' %}
+</div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"></script>
+</body>
+</html>
