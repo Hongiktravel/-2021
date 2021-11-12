@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>About 정유석</title>
+    <link href="{% static 'blog/bootstrap/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/9470a50b12.js" crossorigin="anonymous"></script>
+    <link href="{% static 'single_pages/css/about_me.css' %}" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Jua', sans-serif;
+          }
+    </style>
+
+</head>
+<body>
+{% include 'blog/navbar.html' %}
+<section>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8 mt-4">
+                <h1><font size="15em">경기도 가평군</font></h1>
+                <p>
+                    #쁘띠프랑스 #아침고요 수목원 #남이섬 #바베큐 #막국수 #가평빠지 <br>
+                    #가평 계곡 #웨이크보드 #키즈풀빌라 #가평 캠핑장 #잣 막걸리
+                </p>
+
+                <p><font size="3.7em">자연의 정취에 젖어들게 만드는 가평 아침고요수목원. 어디를 둘러봐도 풍경이 가득해 지루할 틈이 없다.</font></p>
+                <p><font size="3.7em">그중에도 가평하면 빼놓을 수 없는 쁘띠프랑스는 프랑스를 떠올리게 하는 이국적인 풍경으로 빨간 지붕이 매력적이다.</font></p>
+                <p><font size="3.7em">또한 매년 가을에 열리는 자라섬 국제재즈페스티벌은 석양과 음악이 어우러질 때까지 재즈의 매력에 흠뻑 취해볼 수 있다.</font></p>
+
+            </div>
+            <div class="col-lg-4">
+                <a href="https://korean.visitkorea.or.kr/detail/rem_detail.do?cotid=b5bbb222-2b65-4bca-ac94-623b31565014&con_type=11300">
+                    <img src="{% static 'single_pages/images/가평/가평지도.png' %}" width="300" height="300">
+                    <div align="center">
+                    <p>위 그림믈 눌러보세요!</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light margin-for-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>가평 즐길거리</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#가평1">
+                    <img class="card-img=top" src="{% static 'single_pages/images/가평/잣향기 푸른숲.jpg' %}" width="350" height=234>
+                    <div class="card-body">
+                        <h5 class="card-title">잣향기 푸른숲</h5>
+                        <p>#피톤치드 #국내 최대 #힐링 #산림휴양지</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#가평2">
+                    <img class="card-img=top" src="{% static 'single_pages/images/가평/쁘띠프랑스.jpg' %}" width="350" height=234">
+                    <div class="card-body">
+                        <h5 class="card-title">쁘띠프랑스</h5>
+                        <p>#알프스 #청평댐 #프랑스풍 #생택쥐페리</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#가평3">
+                    <img class="card-img=top" src="{% static 'single_pages/images/가평/막국수.jpg' %}" width="350" height=234">
+                    <div class="card-body">
+                        <h5 class="card-title">가평막국수</h5>
+                        <p>#막국수거리 #가평맛집 #막국수맛집</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="가평1" tabindex="-1" aria-labelledby="가평1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="가평1ModalLabel">가평 잣향기 푸른숲</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/가평/잣향기 푸른숲.jpg' %}" width="350" height=234">
+                    </div>
+                    <div class="col-lg-5">
+                        <p>경기도 잣향기푸른숲은 수령(樹齡) 80년 이상의 잣나무림이 국내 최대로 분포하고 있으며, 피톤치드 가득한 쾌적한 잣나무숲에서 숲체험과 산림치유 프로그램을 복합적으로 체험할 수 있는 특별한 산림휴양 공간이다. 축령산과 서리산 자락 해발 450~600에 위치하고 있는 경기도 잣향기푸른숲은 수령80년 이상의 잣나무가 국내 최대로 분포하고 있는 곳이다.
+
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="가평2" tabindex="-1" aria-labelledby="가평2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="가평2ModalLabel">쁘띠프랑스</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/가평/가평금강막국수.jpg' %}" width="350" height="234">
+                    </div>
+                    <div class="col-lg-5">
+                        <p>
+                            청평댐에서 남이섬 방향으로 호숫가 길을 따라 10km쯤 가다 보면 왼쪽 언덕에 이국적 건물들이 옹기종기 모여 있는 걸 볼 수 있다. 건물만 보면 지중해 연안의 마을 같기도 하고 호명산의 수려한 주위 배경과 함께 보면 마치 알프스 산록의 전원마을 같은 이곳은, 프랑스 문화마을 쁘띠프랑스이다. 쁘띠프랑스의 컨셉트는 '꽃과 별, 그리고 어린왕자'이다. 쁘띠프랑스는 청소년수련시설(고성청소년수련원)을 겸한 프랑스 문화마을로, 가평군 청평면 고성리 일대에 조성됐다. 쁘띠프랑스는 프랑스풍 건물로 이루어져 있으며 관람객들은 숙박을 하면서 프랑스의 의식주 문화를 체험할 수 있다.
+
+
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="가평3" tabindex="-1" aria-labelledby="가평3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="가평3Label">가평 막국수</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/가평/가평금강막국수.jpg' %}" width="350" height=234>
+                    </div>
+                    <div class="col-lg-5">
+                        <p>50년 전통의 맛을 자랑하는 가평의 자랑 원조 막국수 전문점,
+                            메밀전과 녹두전을 함께 곁들여 먹는 50년 전통의 손맛이 이곳저곳 맛집으로 소문난 집이다.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="fixed-bottom">
+    {% include 'blog/footer.html' %}
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+</html>

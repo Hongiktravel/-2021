@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>About 정유석</title>
+    <link href="{% static 'blog/bootstrap/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/9470a50b12.js" crossorigin="anonymous"></script>
+    <link href="{% static 'single_pages/css/about_me.css' %}" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Jua', sans-serif;
+          }
+    </style>
+
+</head>
+<body>
+{% include 'blog/navbar.html' %}
+<section>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8 mt-4">
+                <h1><font size="15em">전라북도 전주시</font></h1>
+                <p>
+                    #객리단길 #전주동물원 #콩국수 #막걸리 #한옥마을 #한복대여 <br>
+                    #애견 동반 #게스트하우스 #전주책방 #모주 #전주 남부시장
+                </p>
+
+                <p><font size="3.7em">한국의 멋이 살아있는 전주. 도심 한복판에 자리한 한옥마을에 들어서면 시대를 거슬러가는 기분이다.</font></p>
+                <p><font size="3.7em">경사스러운 터에 지어진 궁궐'이란 의미의 경기전에 들어서면 대나무가 서로 부대끼며 내는 소리에 귀 기울이게 된다.</font></p>
+                <p><font size="3.7em">전주 야경투어 명소의 대표인 전동성당과 한옥마을을 한눈에 내려다볼 수 있는 오목대 역시 빼놓을 수 없는 곳.</font></p>
+
+            </div>
+            <div class="col-lg-4">
+                <a href="https://korean.visitkorea.or.kr/detail/cs_detail_cos.do?cotid=4f075aab-41ed-4dfb-b3f1-aa367d1ee1d4&big_category=C01&mid_category=C0112&big_area=37">
+                    <img src="{% static 'single_pages/images/전주/전주지도.png' %}" width="300" height="300">
+                    <div align="center">
+                    <p>위 그림믈 눌러보세요!</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light margin-for-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>전주 즐길거리</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#전주1">
+                    <img class="card-img=top" src="{% static 'single_pages/images/전주/전주남부시장.jpg' %}" width="350" height=234>
+                    <div class="card-body">
+                        <h5 class="card-title">전주남부시장</h5>
+                        <p>#생동감 #콩나물국밥 #모주 #전주성</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#전주2">
+                    <img class="card-img=top" src="{% static 'single_pages/images/전주/전주동물원.jpg' %}" width="350" height=234">
+                    <div class="card-body">
+                        <h5 class="card-title">전주 동물원</h5>
+                        <p>#쉼터 #힐링 #동물복지 #도심여행</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#전주3">
+                    <img class="card-img=top" src="{% static 'single_pages/images/전주/전주한옥마을.jpg' %}" width="350" height=234">
+                    <div class="card-body">
+                        <h5 class="card-title">전주한옥마을</h5>
+                        <p>#가족여행 #한복체험 #재미있는</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="전주1" tabindex="-1" aria-labelledby="전주1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="전주1ModalLabel">전주남부시장</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/전주/전주난ㅁ부시장.jpg' %}" width="350" height=234">
+                    </div>
+                    <div class="col-lg-5">
+                        <p>전주 남부시장은 조선 중기 때부터 전주성 남문 바깥에 섰던 남문장의 역사를 이은 오래된 전통시장이다.
+                            일제강점기 때 전주성 동서남북에 섰던 장들을 하나로 통합해 남부시장이라는 명칭을 얻었고, 오늘날에는 시장 2층에 청년몰을 유치하고 한옥마을과 함께 야시장을 개설해 좋은 반응을 얻고 있다.
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="전주2" tabindex="-1" aria-labelledby="전주2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="전주2ModalLabel">전주동물원</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/전주/전주동물원.jpg' %}" width="350" height="234">
+                    </div>
+                    <div class="col-lg-5">
+                        <p>1978년 6월 10일에 개원하였으며, 면적은 11만 8800㎡이다. 지방동물원 중 가장 오래된 동물원으로 과천 서울대공원 동물원, 용인 에버랜드 동물원에 이어 세 번째 규모이다.
+                            호랑이·사자·곰·하마·기린·들소·큰뿔소·아시아코끼리·낙타·왕비단뱀 등 대형 동물이 많은 편이다.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="전주3" tabindex="-1" aria-labelledby="전주3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="전주3Label">전주한옥마을</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/군산/해물짬뽕.jpg' %}" width="350" height=234>
+                    </div>
+                    <div class="col-lg-5">
+                        <p>전주는 후백제의 도읍이었으며, 조선 태조의 본향으로 왕조의 뿌리다. 또 한식과 한복, 한지 등 우리 문화의 참맛이 살아 있는 고장이다. 풍남동과 교동 일대 전주한옥마을은 그 중심이다.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="fixed-bottom">
+    {% include 'blog/footer.html' %}
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+</html>

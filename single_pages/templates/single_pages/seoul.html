@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>About 정유석</title>
+    <link href="{% static 'blog/bootstrap/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/9470a50b12.js" crossorigin="anonymous"></script>
+    <link href="{% static 'single_pages/css/about_me.css' %}" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Jua', sans-serif;
+          }
+    </style>
+
+</head>
+<body>
+{% include 'blog/navbar.html' %}
+<section>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8 mt-4">
+                <h1><font size="15em">서울특별시</font></h1>
+                <p>
+                    #힙지로 #더현대 서울 #홍대맛집 #힙지로맛집 #롯데월드 #루프탑카페 <br>
+                    #남산 #이태원 #덕수궁 #서울숲 #올림픽대공원
+                </p>
+
+                <p><font size="3.7em">과거와 현재가 공존하며 하루가 다르게 변하는 서울을 여행하는 일은 매일이 새롭다.</font></p>
+                <p><font size="3.7em"> 도시 한복판에서 600년의 역사를 그대로 안고 있는 아름다운 </font></p>
+                <p><font size="3.7em">고궁들과 더불어 대한민국의 트렌드를 이끌어나가는 예술과 문화의 크고 작은 동네들을 둘러볼 수 있는 서울은 도시 여행에 최적화된 장소다.</font></p>
+
+            </div>
+            <div class="col-lg-4">
+                <a href="https://korean.visitkorea.or.kr/detail/cs_detail_cos.do?cotid=f851152e-a497-4884-80eb-573c2e303a63&big_category=C01&mid_category=C0115&big_area=1">
+                    <img src="{% static 'single_pages/images/서울/서울지도.png' %}" width="300" height="300">
+                    <div align="center">
+                    <p>위 그림믈 눌러보세요!</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light margin-for-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>서울 즐길거리</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#서울1">
+                    <img class="card-img=top" src="{% static 'single_pages/images/서울/남산.jpg' %}" width="350" height=234>
+                    <div class="card-body">
+                        <h5 class="card-title">남산</h5>
+                        <p>#재미있는 #포근한 #성광길 #나들이</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#서울2">
+                    <img class="card-img=top" src="{% static 'single_pages/images/서울/덕수궁.jpg' %}" width="350" height=234">
+                    <div class="card-body">
+                        <h5 class="card-title">덕수궁</h5>
+                        <p>#산책 #야경 #단풍구경 #궁궐</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#서울3">
+                    <img class="card-img=top" src="{% static 'single_pages/images/서울/롯데월드.jpg' %}" width="350" height=234">
+                    <div class="card-body">
+                        <h5 class="card-title">롯데월드</h5>
+                        <p>#웅장한 #회전목마 #아이스링크</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="군산1" tabindex="-1" aria-labelledby="군산1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="군산1ModalLabel">남산</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/서울/남산.jpg' %}" width="350" height=234">
+                    </div>
+                    <div class="col-lg-5">
+                        <p>서울특별시 중구와 용산구 경계에 있는 산. [내용] 높이 265.2m. 대부분 화강암으로 구성되어 있다.
+                            북쪽의 북악산, 동쪽의 낙산(駱山), 서쪽의 인왕산(仁旺山)과 함께 서울 중앙부를 둘러싸고 있다.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="서울2" tabindex="-1" aria-labelledby="서울2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="서울2ModalLabel">덕수궁</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/서울/덕수궁궁jpg' %}" width="350" height="234">
+                    </div>
+                    <div class="col-lg-5">
+                        <p>서울특별시 중구에 있는 조선시대 고종의 거처로 이용된 궁궐. 사적. [개설] 덕수궁은 처음 월산대군의 집터였던 것을
+                            임진왜란 이후 선조의 임시거처로 사용되어 정릉동 행궁으로 불리다가 광해군 때에 경운궁으로 개칭되었다.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="서울3" tabindex="-1" aria-labelledby="서울3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="서울3Label">롯데월드</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/군산/해물짬뽕.jpg' %}" width="350" height=234>
+                    </div>
+                    <div class="col-lg-5">
+                        <p>롯데월드 어드벤처는 대규모의 실내공원으로, ‘모험과 신비’를 주제로 한 탑승시설·관람시설·
+                            공연 프로그램·세계의 거리로 구성되어 있으며, 미국·일본이 만든 디즈니랜드, 캐나다의 에드먼튼, 미국의 킹아일랜드 등과 비등한 규모이다. 역사전시관·모형촌·놀이마당·저자거리로 구성된 민속관은 종래의 박물관과는 달리 첨단 영상과 새로운 전시기법을 도입하였다.
+[네이버 지식백과] 롯데월드</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="fixed-bottom">
+    {% include 'blog/footer.html' %}
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>About 정유석</title>
+    <link href="{% static 'blog/bootstrap/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/9470a50b12.js" crossorigin="anonymous"></script>
+    <link href="{% static 'single_pages/css/about_me.css' %}" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Jua', sans-serif;
+          }
+    </style>
+
+</head>
+<body>
+{% include 'blog/navbar.html' %}
+<section>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8 mt-4">
+                <h1><font size="15em">경상북도 경주시</font></h1>
+                <p>
+                    #황리단길 #보문단지 #떡갈비 #순두부 #동궁과 월지 #경주월드 <br>
+                    #애견풀빌라 #글램핑 #불국사 #신혼여행 #세계유네스코 문화유산
+                </p>
+
+                <p><font size="3.7em">지붕 없는 박물관 경주. 경주는 그만큼 발길이 닿는 어느 곳이든 문화 유적지를 만날 수 있는 곳이다. </font></p>
+                <p><font size="3.7em">밤이면 더 빛나는 안압지를 비롯해 허허벌판에 자리를 굳건히 지키고 있는 첨성대. 뛰어난 건축미를 자랑하는 불국사 석굴암까지 어느 하나 빼놓을 수 없다. </font></p>
+                <p><font size="3.7em">경주 여행의 기록을 남기고 싶다면 스탬프 투어를 이용해보는 것도 좋다. 16곳의 명소를 탐방할 때마다 찍히는 도장 모으는 재미가 쏠쏠하다. 모바일 앱으로도 스탬프 투어 참여가 가능하다.</font></p>
+
+            </div>
+            <div class="col-lg-4">
+                <a href="https://korean.visitkorea.or.kr/detail/cs_detail_cos.do?cotid=ca11bbd8-b77f-42a0-bf9a-ff99fd281d1f&big_category=C01&mid_category=C0114&big_area=35">
+                    <img src="{% static 'single_pages/images/경주/경주지도.png' %}" width="300" height="300">
+                    <div align="center">
+                    <p>위 그림믈 눌러보세요!</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light margin-for-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>경주 즐길거리</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#경주1">
+                    <img class="card-img=top" src="{% static 'single_pages/images/경주/동궁과 월지.jpg' %}" width="350" height=234>
+                    <div class="card-body">
+                        <h5 class="card-title">동궁과 월지</h5>
+                        <p>#신라 #연인과 함께 #야경 #궁궐</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#경주2">
+                    <img class="card-img=top" src="{% static 'single_pages/images/경주/계림.jpg' %}" width="350" height=234">
+                    <div class="card-body">
+                        <h5 class="card-title">계림</h5>
+                        <p>#반월성 #가족코스 #죽기전에꼭 가야할 #김알지</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#경주3">
+                    <img class="card-img=top" src="{% static 'single_pages/images/경주/순두부.jpg' %}" width="350" height=234">
+                    <div class="card-body">
+                        <h5 class="card-title">순두부</h5>
+                        <p>#백년가게 #국내산 콩 #맷돌</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="경주1" tabindex="-1" aria-labelledby="경주1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="경주1ModalLabel">동궁과 월지</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/경주/동궁과 월지.jpg' %}" width="350" height=234">
+                    </div>
+                    <div class="col-lg-5">
+                        <p> 동궁(東宮)과 월지(月池)는 ‘안압지(雁鴨池)’라는 명칭으로 알려져 있었으나 후대의 발굴 조사를 토대로 2011년 7월 ‘동궁과 월지’로 명칭이 바뀌었다.
+                            동궁과 월지는 신라 천년의 궁궐인 반월성에서 동북쪽으로 걸어서 십분 거리에 있다. 통일 시기 영토를 넓히는 과정에 많은 부를 축적한 왕권은 극히 호화롭고 사치한 생활을 누리면서 크고 화려한 궁전을 갖추는 데 각별한 관심을 두었다.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="경주2" tabindex="-1" aria-labelledby="경주2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="경주2ModalLabel">계림</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/경주/계림.jpg' %}" width="350" height="234">
+                    </div>
+                    <div class="col-lg-5">
+                        <p>신라 지역으로 새롭게 유입된 신진 세력의 모습을 상징적으로 표현하는 설화로 언덕 위를 가득 채우는 울창한 숲과 사당은 천 년의 전설을 실제인듯 느끼게
+                            한다. 저녁 어스름이 내리는 늦은 시간 신비한 조명으로 더욱 생동감 있는 계림을 찾아 옛이야기를 상상해보자. 화사한 낮보다 더욱 이색적인 숲의 아름다움을 느낄 수 있다.
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="경주3" tabindex="-1" aria-labelledby="경주3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="경주3Label">맷돌 순두부</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/군산/해물짬뽕.jpg' %}" width="350" height=234>
+                    </div>
+                    <div class="col-lg-5">
+                        <p>100% 국내산 콩으로만 26년간 매일 새벽 직접 맷돌로 갈아 고집스레 옛 맛을 지켜온 가마솥 전통방식으로 만듭니다. 콩의 입자가 거칠어 순두부의
+                            식감이 살아 있는 것이 특징이며 식사 후엔 국내산 콩비지를 무료로 가져갈 수 있어서 지역 주민들도 많이 찾는 곳입니다.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="fixed-bottom">
+    {% include 'blog/footer.html' %}
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+</html>
