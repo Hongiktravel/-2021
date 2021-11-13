@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>About 정유석</title>
+    <link href="{% static 'blog/bootstrap/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/9470a50b12.js" crossorigin="anonymous"></script>
+    <link href="{% static 'single_pages/css/about_me.css' %}" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Jua', sans-serif;
+          }
+    </style>
+
+</head>
+<body>
+{% include 'blog/navbar.html' %}
+<section>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8 mt-4">
+                <h1><font size="15em">전라남도 여수시</font></h1>
+                <p>
+                    #금오도 #이순신광장 #아르떼뮤지엄 #배낭여행 #골프 #향일암 <br>
+                    #오션뷰 #장어탕 #예술랜드 #케이블카 #무슬목해변 #게장
+                </p>
+
+                <p><font size="3.7em">여수는 한반도 남해안의 중앙에 위치한다.</font></p>
+                <p><font size="3.7em">시의 주변으로는 돌산도, 경도, 묘도, 화태도, 백야도 등 크고작은 섬들이 많이 분포한다.</font></p>
+
+            </div>
+            <div class="col-lg-4">
+                <a href="https://korean.visitkorea.or.kr/detail/rem_detail.do?cotid=bd315444-ccce-42b3-8faf-7b660fe0d010&con_type=10500">
+                    <img src="{% static 'single_pages/images/여수/여수지도.jpg' %}" width="300" height="300">
+                    <div align="center">
+                    <p>위 그림을 눌러보세요!</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light margin-for-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>여수 즐길거리</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#여수1">
+                    <img class="card-img=top" src="{% static 'single_pages/images/여수/금오도.jpg' %}" width="350" height=234>
+                    <div class="card-body">
+                        <h5 class="card-title">금오도</h5>
+                        <p>#낚시 #전설 #동물들의 낙원</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#여수2">
+                    <img class="card-img=top" src="{% static 'single_pages/images/여수/아르떼뮤지엄.jpg' %}" width="350" height=234">
+                    <div class="card-body">
+                        <h5 class="card-title">아르떼뮤지엄</h5>
+                        <p>#박람회 #미술 #엑스포 #미디어</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#여수3">
+                    <img class="card-img=top" src="{% static 'single_pages/images/여수/게장.jpg' %}" width="350" height=234">
+                    <div class="card-body">
+                        <h5 class="card-title">싱싱게장마을</h5>
+                        <p>#게장백반 #가성비 #리필가능</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="여수1" tabindex="-1" aria-labelledby="여수1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="여수1ModalLabel">금오도</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/여수/금오도.jpg' %}" width="350" height=234">
+                    </div>
+                    <div class="col-lg-5">
+                        <p>다도해해상국립공원 지역으로 마치 큰 자라를 닮았다고 하여 금오도라 부르며, 설화와 전설, 민요와 민속놀이 등이 다양하게 전해져 오고 있다.
+                            우리나라 최대의 감성돔 산란처 중의 한 곳으로도 유명하며 낚시원터로 강성돔 외에도 참돔, 돌돔 등이 많이 나서 낚시애호가들에게 각광 받고 있다.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="여수2" tabindex="-1" aria-labelledby="여수2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="여수2ModalLabel">아르떼뮤지엄</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/여수/아르떼뮤지엄.jpg' %}" width="350" height="234">
+                    </div>
+                    <div class="col-lg-5">
+                        <p>국내최대몰입형 미디어아트전시관 아르떼뮤지엄. 아르떼뮤지엄 여수는 코엑스 "WAVE"작품으로 유명한 세계 수준의 디지털 디자인 컴퍼니 d"strict가 선보이는 국내 최대 규모의 몰입형 두 번째 미디어아트 전시관이다.
+                            대표적인 해양 관광의 도시 여수 엑스포 국제관에서 오션(OCEAN)이라는 테마로 여수의 바다와 자연 경관을 포함한 12개의 다채로운 미디어아트 전시가 1,400평의 공간에서 펼쳐진다.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="여수3" tabindex="-1" aria-labelledby="여수3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="여수3Label">싱싱게장마을</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/여수/게장.jpg' %}" width="350" height=234>
+                    </div>
+                    <div class="col-lg-5">
+                        <p>줄 서서 먹는 유명 맛집으로, 게장만을 판매하는 돌게장백반 단일 메뉴 음식점이다.
+                            게가 싱싱해서 맛이 고소하고 살도 실해, 소식하는 사람들도 밥 두 그릇은 기본이다. 현지인도 추천하는 가성비 음식점으로, 재료가 소진되는 대로 문을 닫는다. 오후 3시 전후로 마감되니 일찍 찾아가는 것이 좋다.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="fixed-bottom">
+    {% include 'blog/footer.html' %}
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+</html>

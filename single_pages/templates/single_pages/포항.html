@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>About 정유석</title>
+    <link href="{% static 'blog/bootstrap/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/9470a50b12.js" crossorigin="anonymous"></script>
+    <link href="{% static 'single_pages/css/about_me.css' %}" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Jua', sans-serif;
+          }
+    </style>
+
+</head>
+<body>
+{% include 'blog/navbar.html' %}
+<section>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8 mt-4">
+                <h1><font size="15em">경상북도 포항시</font></h1>
+                <p>
+                    #죽도시장 #포항물회 #장미빵 #호미곶 #과메기 #두낫디스터브 <br>
+                    #메밀꽃사진관 #모리국수 #구룡포 #이가리닻전망대
+                </p>
+
+                <p><font size="3.7em">포항의 바다가 다시 살아났다. 과거의 모습을 잃어버린 동빈가 일대의 내항은 한때 주거공간의 확장을 위해 매립되었던</font></p>
+                <p><font size="3.7em">시기를 지나, 2013년 포항운하라는 이름의 새로운 모습으로 다시 물길을 열어 사람들을 모은다. 넓게는 포항의 역사를,</font></p>
+                <p><font size="3.7em">깊게는 포항운하의 지난 이야기를 만날 수 있는  포항운하관과 1.3km의 바다와 강이 만나는 물길을 타고 과거로 들어가</font></p>
+                <p><font size="3.7em">보는 포항크루즈로 포항의 어제와 오늘을 만난다. 포항 바다여행에는 역사와 사람, 바다가 펼쳐져 있다.</font></p>
+
+            </div>
+            <div class="col-lg-4">
+                <a href="https://korean.visitkorea.or.kr/detail/rem_detail.do?cotid=6607d937-c876-4dd9-b5d9-ee2b56cdeedc&con_type=11300">
+                    <img src="{% static 'single_pages/images/포항/포항지도.png' %}" width="300" height="300">
+                    <div align="center">
+                    <p>위 그림믈 눌러보세요!</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light margin-for-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>포항 즐길거리</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#포항1">
+                    <img class="card-img=top" src="{% static 'single_pages/images/포항/죽도시장.jpg' %}" width="350" height=234>
+                    <div class="card-body">
+                        <h5 class="card-title">죽도시장</h5>
+                        <p>#가족여행 #전통시장 #시장맛집 #한국관광의별</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#포항2">
+                    <img class="card-img=top" src="{% static 'single_pages/images/포항/이가리닻.jpg' %}" width="350" height=234">
+                    <div class="card-body">
+                        <h5 class="card-title">이가리닻전망대</h5>
+                        <p>#경치좋은곳 #바다경치 #가족과함께 #사진핫스팟</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#포항3">
+                    <img class="card-img=top" src="{% static 'single_pages/images/포항/물회.jpg' %}" width="350" height=234">
+                    <div class="card-body">
+                        <h5 class="card-title">포항물회</h5>
+                        <p>#시장맛집 #재래시장 #죽도시장</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="포항1" tabindex="-1" aria-labelledby="포항1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="포항1ModalLabel">포항 죽도시장</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/포항/죽도시장.jpg' %}" width="350" height=234">
+                    </div>
+                    <div class="col-lg-5">
+                        <p>포항 죽도시장은 50년전 갈대밭이 무성한 포항 내항의 늪지대의 노점상들이 들어서기 시작하여 형성되었다.<br>
+                           포항의 중심지인 오거리에서 동쪽으로 500m 지점에 동해안 최대의 상설시장인 죽도어시장이 있고 수산물 위판장내에 횟집 200여개가
+                            밀집되어 있어 사계절 저렴한 가격으로 동해안의 싱싱한 회를 살 수 있으며, 인근 상가에서 초장 등 재료값만 내면 바로 먹을 수도 있다.<br>
+                            신선한 제철 해산물로 만든 포항물회와 통통한 전복이 통째로 들어간 전복죽이 전국적으로 유명하며, 특히 겨울철에는 포항의 명물인 과메기를 맛볼 수 있다.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="포항2" tabindex="-1" aria-labelledby="포항2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="포항2ModalLabel">이가리닻전망대</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/포항/이가리닻.jpg' %}" width="350" height="234">
+                    </div>
+                    <div class="col-lg-5">
+                        <p>포항시 북구 청하면 이가리에 위치한 이가리닻전망대는 푸른 해송과 아름다운 이가리 간이해수욕장 인근에 선박을 정착시키는 닻을 형상화한 전망대다.<br>
+                            높이 10m, 길이 102m 규모로 시원스레 펼쳐진 포항의 바다를 한눈에 담을 수 있는 곳이다.<br>
+                            또한 JTBC에서 인기리에 방영된 드라마 ''런온''의 주요 촬영장소로 많은 관광객들이 찾고 있는 핫플레이스다.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="포항3" tabindex="-1" aria-labelledby="포항3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="포항3Label">포항 물회</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/포항/물회.jpg' %}" width="350" height=234>
+                    </div>
+                    <div class="col-lg-5">
+                        <p> 물회는 고기를 잡느라 바쁜 어부들이 한 끼 식사를 빨리 해결할 요량으로 먹던 음식. 방금 잡은 물고기를 회 쳐서 고추장 양념과 물을 넣고 훌훌 들이마신 데서 유래했다.<br>
+                            처음에는 어부 사이에서 유행하다가 차차 주민에게 알려지면서 ‘포항물회’라는 지방 특유의 음식으로 정착했다.<br>
+                            배, 마늘, 미나리, 양파, 오이, 당근, 쪽파, 고추장, 참기름, 김 등 양념도 12가지나 들어간다.
+                            갖가지 해산물 반찬에 매운탕을 곁들이는 것도 특징이다. 매콤하고 시원한 물회 한 그릇 비우면 나른한 몸에 생기가 도는 느낌이다.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="fixed-bottom">
+    {% include 'blog/footer.html' %}
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+</html>

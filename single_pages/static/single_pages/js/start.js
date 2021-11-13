@@ -13,8 +13,8 @@ function calResult(){
 
 function setResult(){
   let point = calResult();
-  const results= document.querySelector('.results')
-  result.innerHTML=point;
+//  const results= document.querySelector('.results')
+//  results.innerHTML=point;
   const resultName = document.querySelector('.resultname');
   resultName.innerHTML = infoList[point].name;
 

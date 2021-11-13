@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>About 정유석</title>
+    <link href="{% static 'blog/bootstrap/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/9470a50b12.js" crossorigin="anonymous"></script>
+    <link href="{% static 'single_pages/css/about_me.css' %}" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Jua', sans-serif;
+          }
+    </style>
+
+</head>
+<body>
+{% include 'blog/navbar.html' %}
+<section>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8 mt-4">
+                <h1><font size="15em">경상남도 거제시</font></h1>
+                <p>
+                    #바람의 언덕 #신선대 #계룡산 #매미성 #구조라성 #법동공원 <br>
+                    #거제오션뷰카트체험장 #가조도 #강성횟집 #바다뷰카페 #반고개무침회
+                </p>
+
+                <p><font size="3.7em">거제도는 우리나라의 남해바다의 푸르름이 역사와 자연이 함께 어우러진 아름다운 도시다.</font></p>
+                <p><font size="3.7em">거대 조선소와 기업들 덕분에 의외로 외국인의 모습을 쉽게 볼 수 있고, 그래서 이국적인 정취와 우리 고유의 역사가 함께 꽃을 피운 곳이기도 하다.</font></p>
+
+            </div>
+            <div class="col-lg-4">
+                <a href="https://korean.visitkorea.or.kr/detail/rem_detail.do?cotid=bd315444-ccce-42b3-8faf-7b660fe0d010&con_type=10500">
+                    <img src="{% static 'single_pages/images/거제/거제지도.jpg' %}" width="300" height="300">
+                    <div align="center">
+                    <p>위 그림을 눌러보세요!</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light margin-for-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>거제 즐길거리</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#거제1">
+                    <img class="card-img=top" src="{% static 'single_pages/images/거제/바람의언덕.jpg' %}" width="350" height=234>
+                    <div class="card-body">
+                        <h5 class="card-title">바람의언덕</h5>
+                        <p>#가족여행 #학동마을 #동백나무군락 #힐링</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#거제2">
+                    <img class="card-img=top" src="{% static 'single_pages/images/거제/거제오션뷰카트체험장.jpg' %}" width="350" height=234">
+                    <div class="card-body">
+                        <h5 class="card-title">거제오션뷰카트체험장</h5>
+                        <p>#레포츠도전 #가족코스 #여행의백미 #바다</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#거제3">
+                    <img class="card-img=top" src="{% static 'single_pages/images/거제/강성횟집.jpg' %}" width="350" height=234">
+                    <div class="card-body">
+                        <h5 class="card-title">강성횟집</h5>
+                        <p>#식도락 #가성비 #회맛집</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="거제1" tabindex="-1" aria-labelledby="거제1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="거제1ModalLabel">바람의언덕</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/거제/바람의언덕.jpg' %}" width="350" height=234">
+                    </div>
+                    <div class="col-lg-5">
+                        <p>남부면 해금강마을 가기 전 도장포 마을이 있다. 좌측으로 내려가면 도장포 유람선선착장이 있어 외도, 해금강 관광을 할수 있으며, 매표소에서 바라다 보이는 언덕이 바람의 언덕이다.
+                            이곳은 잔디로 이루어진 민둥산이며 바다가 시원스레 바라다 보이는 전망이 좋은 곳이다.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="거제2" tabindex="-1" aria-labelledby="거제2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="거제2ModalLabel">거제오션뷰카트체험장</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/거제/거제오션뷰카트체험장.jpg' %}" width="350" height="234">
+                    </div>
+                    <div class="col-lg-5">
+                        <p>거제도 망치리의 해변에 위치한 거제 오션뷰 카트체험장, ‘오션뷰’라는 이름에 맞게 바다를 보며 다양한 레포츠를 즐길 수 있는 공간이다.
+                            어린이부터 어른까지 누구나 즐길 수 있는 레포츠가 바닷가 바로 옆에 마련되어 있다. 가족, 연인, 친구와 함께 여행의 백미를 장식할 수 있어 거제를 찾는 여행객들이 즐겨 찾는다.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="거제3" tabindex="-1" aria-labelledby="거제3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="거제3Label">강성횟집</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/거제/강성횟집.jpg' %}" width="350" height=234>
+                    </div>
+                    <div class="col-lg-5">
+                        <p>해녀와 선주가 직접 운영하는 곳으로 해녀가 직접 채취한 전복, 성게, 알, 소라, 멍게, 해삼 등을 제공해 높은 신선도를 자랑한다.
+                            두툼한 모둠 회와 함께 나오는 밑반찬 또한 다양한 종류와 푸짐한 양으로 가성비 또한 좋은 맛집이다.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="fixed-bottom">
+    {% include 'blog/footer.html' %}
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+</html>

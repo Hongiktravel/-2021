@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>About 정유석</title>
+    <link href="{% static 'blog/bootstrap/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/9470a50b12.js" crossorigin="anonymous"></script>
+    <link href="{% static 'single_pages/css/about_me.css' %}" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Jua', sans-serif;
+          }
+    </style>
+
+</head>
+<body>
+{% include 'blog/navbar.html' %}
+<section>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8 mt-4">
+                <h1><font size="15em">강원도 강릉시</font></h1>
+                <p>
+                    #강문해변 #경포대 #초당순두부 #커피거리 #주문진 #바다카페 <br>
+                    #중앙시장 #엄지네꼬막 #BTS정류장 #정동진
+                </p>
+
+                <p><font size="3.7em">1930년대 우리나라 근대역사를 고스란히 간직한 도시 강릉. 근대문화유산 투어 코스를 따라 걷다보면 곳곳에 남아있는</font></p>
+                <p><font size="3.7em">일본식 주택과 근대건축물들을 쉽게 볼 수 있다. 2.5km 길이의 오래된 철도가 놓인 경암동 철길마을은 출사지로도 유명.</font></p>
+                <p><font size="3.7em">우리나라에서 가장 오래된 빵집, 전국 5대 짬뽕 맛집, 70년 역사의 호떡집 등 강릉 맛집 먹방 여행도 추천한다.</font></p>
+
+            </div>
+            <div class="col-lg-4">
+                <a href="https://korean.visitkorea.or.kr/detail/cs_detail_cos.do?cotid=6f2c78cd-03d5-46b0-bdfc-20e5497d2c29&big_category=C01&mid_category=C0112&big_area=32">
+                    <img src="{% static 'single_pages/images/강릉/강릉지도.png' %}" width="300" height="300">
+                    <div align="center">
+                    <p>위 그림믈 눌러보세요!</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light margin-for-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>강릉 즐길거리</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#강릉1">
+                    <img class="card-img=top" src="{% static 'single_pages/images/강릉/월화거리.jpg' %}" width="350" height=234>
+                    <div class="card-body">
+                        <h5 class="card-title">월화거리</h5>
+                        <p>#데이트코스 #연인과함께 #사진찍기좋은곳 #산책거리</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#강릉2">
+                    <img class="card-img=top" src="{% static 'single_pages/images/강릉/경포대.jpg' %}" width="350" height=234">
+                    <div class="card-body">
+                        <h5 class="card-title">강릉경포대</h5>
+                        <p>#관광지 #역사 #유적지 #문화재</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#강릉3">
+                    <img class="card-img=top" src="{% static 'single_pages/images/강릉/순두부.jpg' %}" width="350" height=234">
+                    <div class="card-body">
+                        <h5 class="card-title">초당순두부</h5>
+                        <p>#순두부 #강릉맛집 #맛집 #순두부전골</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="강릉1" tabindex="-1" aria-labelledby="강릉1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="강릉1ModalLabel">강릉 월화거리</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/강릉/월화거리.jpg' %}" width="350" height=234">
+                    </div>
+                    <div class="col-lg-5">
+                        <p>춘향전의 모티브이기도 한 이 ‘남대천 월화정 설화’는 ‘월화거리’로 재탄생되어 천년전 설화가 아닌 오늘을 살아가는 모든 사람들의 사랑이야기로 다시 채워지고 있다.<br>
+                            사랑의 성지로 다시 태어난 월화거리! 월화거리는 지금, 사랑이다. 남대천 월화정 설화’는 남·녀 간의 애틋한 사랑이야기로,
+                            신라 시대 강릉 김씨의 시조가 된 명주군왕 김주원의 부모인 ‘무월랑’과 ‘연화 부인’이 그 주인공이다.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="강릉2" tabindex="-1" aria-labelledby="강릉2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="강릉2ModalLabel">강릉중동호떡</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/강릉/경포대.jpg' %}" width="350" height="234">
+                    </div>
+                    <div class="col-lg-5">
+                        <p>경포대는 관동팔경의 하나로 경포호수 북쪽 언덕에 있는 누각이다.<br>
+                           앞면 5칸·옆면 5칸 규모로 지붕은 옆면이 여덟 팔(八)자 모양인 팔작지붕이다. 모두 48개의 기둥으로 이루어졌으며
+                           마루의 높이를 달리하는 입체적 평면을 하고 있다.<br>
+                           경포대 내부에는 숙수많은 명사와 시인묵객의 글이 게시돼 있다.<br>
+                           누각 주위에는 소나무와 상수리나무 들이 알맞게 우거져 운치있는 경관을 이루고 있다.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="강릉3" tabindex="-1" aria-labelledby="강릉3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="강릉3Label">초당순두부</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/강릉/순두부.jpg' %}" width="350" height=234>
+                    </div>
+                    <div class="col-lg-5">
+                        <p>강릉 초당 순두부는 사연도 맛도 깊다. 바다 향이 가득한 초당마을의 순두부는 수백 년 세월을 간직하고 있다.<br>
+                            이곳 식당들은 바닷물을 간수로 쓰고 국산 콩을 이용해 두부를 제조하는 전통 방식을 고수한다.
+                            초당동 두부마을에는 대를 이어 순두부집을 하는 식당 등이 20곳 가까이 있다. 등 굽은 할머니들이
+                            가마솥에서 순두부를 끓이는 모습은 강릉의 훈훈한 새벽 풍경이다.<br>
+                            갓 건져낸 순두부의 맛은 고소하고 질감은 몽글몽글하고 부드럽다. 한입에 넣으면 부드럽게 목을 타고 넘어간다.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="fixed-bottom">
+    {% include 'blog/footer.html' %}
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+</html>

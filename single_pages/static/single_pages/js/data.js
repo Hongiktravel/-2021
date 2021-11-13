@@ -20,7 +20,7 @@ const qnaList = [
   {
     q: '1. 여행에는 왜 가고 싶어?',
     a: [
-      { answer: 'a. 힐링하려고', type: [0, 2, 4, 9] , url: "../images/계곡.jpg"},
+      { answer: 'a. 힐링하려고', type: [0, 2, 4, 9]},
       { answer: 'b. 새로운 사람을 만나려고', type: [0, 3, 6, 5, 10, 8] },
       { answer: 'c. 도전을 즐기고 싶어서', type: [0, 11 ] },
 
