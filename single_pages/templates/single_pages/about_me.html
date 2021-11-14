@@ -3,91 +3,86 @@
 <html lang="ko">
 
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <title>About 정유석</title>
     <link href="{% static 'blog/bootstrap/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/9470a50b12.js" crossorigin="anonymous"></script>
     <link href="{% static 'single_pages/css/about_me.css' %}" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
     <style>
-        body{
-            background-color: #87CEFA;
-
-        }
-
         * {
             font-family: 'Jua', sans-serif;
-
-        }
+          }
     </style>
 
 </head>
 <body>
 {% include 'blog/navbar.html' %}
-    <section>
-        <div class="container mt-4">
-            <div class="row">
-                <div class="col-lg-8">
-                    <h1>전라북도 군산시</h1>
-                    <br>
-                    <p>
-                        #은파호수공원 #월명공원 #선유도 #이성당 #해망굴 #근대역사박물관 <br>
-                        #새만금방조제 #시간여행마을 #동국사 #증동호떡 #복성루짬뽕
-                        <br>
-                        <br>
-                        1930년대 우리나라 근대역사를 고스란히 간직한 도시 군산. 근대문화유산 투어 코스를 따라 걷다보면 곳곳에 남아있는<br>
-                        일본식 주택과 근대건축물들을 쉽게 볼 수 있다. 2.5km 길이의 오래된 철도가 놓인 경암동 철길마을은 출사지로도 유명.<br>
-                        우리나라에서 가장 오래된 빵집, 전국 5대 짬뽕 맛집, 70년 역사의 호떡집 등 군산 맛집 먹방 여행도 추천한다.
-                    </p>
+<section>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8 mt-4">
+                <h1><font size="15em">제주특별자치도</font></h1>
+                <p>
+                    #절물자연휴양림 #대포 주상절리 #정방폭포 #동문시장 #토종흑염소목장 #제트 <br>
+                    #애월빵공장 #무지개해안도로 #해변 #돔베고기 #루지 #해녀해물다찌
+                </p>
 
-                </div>
-                <div class="col-lg-4">
-                    <a href="https://korean.visitkorea.or.kr/detail/rem_detail.do?cotid=bd315444-ccce-42b3-8faf-7b660fe0d010&con_type=10500">
-                        <img src="{% static 'single_pages/images/군산/군산지도.png' %}" width="400" height="400">
-                    </a>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        위 그림을 눌러보세요!</p>
-                </div>
+                <p><font size="3.7em">제주특별자치도에는 한국의 다른 지방과 다른 독특한 문화가 있다.</font></p>
+                <p><font size="3.7em">제주특별자치도에는 여러 전설과 설화가 이어져 내려오고 있으며 유명한 설화로는 설문대할망 설화, 삼성혈, 이어도 설화 설화 등이 대표적이다.</font></p>
+
+            </div>
+            <div class="col-lg-4">
+                <a href="https://korean.visitkorea.or.kr/detail/cs_detail_cos.do?cotid=dd18f6b4-c48b-4ffe-8be4-d24bf6aa07da&big_category=C01&mid_category=C0114&big_area=39">
+                    <img src="{% static 'single_pages/images/제주/제주지도.jpg' %}" width="300" height="300">
+                    <div align="center">
+                    <p>위 그림을 눌러보세요!</p>
+                    </div>
+                </a>
+
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 <section class="bg-light margin-for-footer">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>군산 즐길거리</h1>
+                <h1>제주 즐길거리</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <div class="card" data-toggle="modal" data-target="#군산1">
-                    <img class="card-img=top" src="{% static 'single_pages/images/군산/은파호수공원.jpg' %}" width="350" height=234>
+                <div class="card" data-toggle="modal" data-target="#제주1">
+                    <img class="card-img=top" src="{% static 'single_pages/images/제주/절물자연휴양림.jpg' %}" width="350" height=234>
                     <div class="card-body">
-                        <h5 class="card-title">은파호수공원</h5>
-                        <p>#가족여행 #연인과함께 #힐링 #은파국민관광지</p>
+                        <h5 class="card-title">절물자연휴양림</h5>
+                        <p>#산책로 #절물오름 #분화구 #약수터</p>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4">
-                <div class="card" data-toggle="modal" data-target="#군산2">
-                    <img class="card-img=top" src="{% static 'single_pages/images/군산/군산중동호떡.jpg' %}" width="350" height=234">
+                <div class="card" data-toggle="modal" data-target="#제주2">
+                    <img class="card-img=top" src="{% static 'single_pages/images/제주/정방폭포.jpg' %}" width="350" height=234">
                     <div class="card-body">
-                        <h5 class="card-title">군산중동호떡</h5>
-                        <p>#군산맛집 #가족코스 #도심여행 #이성당</p>
+                        <h5 class="card-title">정방폭포</h5>
+                        <p>#힐링 #해안폭포 #수목 #신비로움</p>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4">
-                <div class="card" data-toggle="modal" data-target="#군산3">
-                    <img class="card-img=top" src="{% static 'single_pages/images/군산/해물짬뽕.jpg' %}" width="350" height=234">
+                <div class="card" data-toggle="modal" data-target="#제주3">
+                    <img class="card-img=top" src="{% static 'single_pages/images/제주/돔베고기.jpg' %}" width="350" height=234">
                     <div class="card-body">
-                        <h5 class="card-title">복성루해물짬뽕</h5>
-                        <p>#전국5대짬뽕 #군산맛집 #짬뽕맛집</p>
+                        <h5 class="card-title">돔베고기</h5>
+                        <p>#돼지고기 #로컬푸드 #흑돼지</p>
                     </div>
                 </div>
             </div>
@@ -96,105 +91,105 @@
 </section>
 
 <!-- Modal -->
-<div class="modal fade" id="군산1" tabindex="-1" aria-labelledby="군산1ModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="군산1ModalLabel">군산 은파호수공원</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-          <div class="row">
-              <div class="col-lg-7">
-                  <img class="img-fluid" src="{% static 'single_pages/images/군산/은파호수공원.jpg' %}" width="350" height=234">
-              </div>
-              <div class="col-lg-5">
-                  <p>은파호수공원은 호수를 중심으로 자전거 타기, 연꽃 자생지 등 자연을 그대로 즐길 수 있는 아름다운 공원이다.
-                      특히 은파 물빛다리의 야경은 다른 곳에서 보기힘든 오색찬란한 풍경을 연출한다. 무엇보다 오랜 전설이 깃든 은적사나 옥구향교의 고즈넉함을 빼놓을 수 없다.
-                  </p>
-              </div>
-          </div>
+<div class="modal fade" id="제주1" tabindex="-1" aria-labelledby="제주1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="제주1ModalLabel">절물자연휴양림</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/제주/절물자연휴양림.jpg' %}" width="350" height=234">
+                    </div>
+                    <div class="col-lg-5">
+                        <p>삼나무와 곰솔 조림지에 조성된 산책로와 그늘공간은 바다에서 불어오는 시원한 바람과 절묘한 조화를 이뤄 한 여름에도 시원한 한기를 느낄 수 있다.
+                            이곳 삼나무 우량조림지는 자연휴양림으로 개발되면서 전국에서 가장 많은 사람이 방문하는 유명한 산림 휴식공간을 제공하고 있다.
+                        </p>
+                    </div>
+                </div>
 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="군산2" tabindex="-1" aria-labelledby="군산2ModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="군산2ModalLabel">군산중동호떡</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-          <div class="row">
-              <div class="col-lg-7">
-                  <img class="img-fluid" src="{% static 'single_pages/images/군산/군산중동호떡.jpg' %}" width="350" height="234">
-              </div>
-              <div class="col-lg-5">
-                  <p>군산은 명물 맛집으로도 유명한 도시다. 복성루의 해물짬뽕과 70년 된 중동호떡집의 호떡 맛보는 것을 빼먹지 말자.
-                      줄서야 하는 번거로움이 있지만 웰빙 푸드의 고소 단백한 맛은 그만한 가치를 할 것이다. 돌아올 때는 이성당의 앙금빵 사오는 것도 재미를 더한다.
-                  </p>
-              </div>
-          </div>
+<div class="modal fade" id="제주2" tabindex="-1" aria-labelledby="제주2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="제주2ModalLabel">정방폭포</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/제주/정방폭포.jpg' %}" width="350" height="234">
+                    </div>
+                    <div class="col-lg-5">
+                        <p>천지연, 천제연과 더불어 제주도내 3대 폭포중의 하나인 정방폭포는 서귀포시 중심가에서 약 1.5㎞ 동남쪽에 위치해 있다.
+                            웅장한 폭포음과 쏟아지는 물줄기에 햇빛이 반사되면, 일곱색깔의 무지개가 푸른 바다와 함께 어우러져 신비의 황홀경을 연출한다.
+                        </p>
+                    </div>
+                </div>
 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="군산3" tabindex="-1" aria-labelledby="군산3Label" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="군산3Label">복성루해물짬뽕</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-          <div class="row">
-              <div class="col-lg-7">
-                  <img class="img-fluid" src="{% static 'single_pages/images/군산/해물짬뽕.jpg' %}" width="350" height=234>
-              </div>
-              <div class="col-lg-5">
-                  <p>군산은 명물 맛집으로도 유명한 도시다. 복성루의 해물짬뽕과 70년 된 중동호떡집의 호떡 맛보는 것을 빼먹지 말자.
-                      줄서야 하는 번거로움이 있지만 웰빙 푸드의 고소 단백한 맛은 그만한 가치를 할 것이다. 돌아올 때는 이성당의 앙금빵 사오는 것도 재미를 더한다.</p>
-              </div>
-          </div>
+<div class="modal fade" id="제주3" tabindex="-1" aria-labelledby="제주3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="제주3Label">돔베고기</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/제주/돔베고기.jpg' %}" width="350" height=234>
+                    </div>
+                    <div class="col-lg-5">
+                        <p>예로부터 제주 도민들이 즐겨 먹는 삶은 돼지고기 요리인 ‘돔베고기’는 도마 위에 바로 썬 삶은 돼지고기라는 제주도 말이다.
+                            기름기가 쫙 빠져서 담백한 맛이 일품인 돔베고기는 다이어트에도 좋아 미용에 관심이 많은 젊은 여성들이 더 좋아한다.</p>
+                    </div>
+                </div>
 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="fixed-bottom">
     {% include 'blog/footer.html' %}
 </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-            crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
 </body>
 </html>

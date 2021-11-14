@@ -13,21 +13,62 @@ function calResult(){
 
 function setResult(){
   let point = calResult();
-//  const results= document.querySelector('.results')
-//  results.innerHTML=point;
   const resultName = document.querySelector('.resultname');
-  resultName.innerHTML = infoList[point].name;
+//  resultName.innerHTML = infoList[point].name;
 
   var resultImg = document.createElement('img');
   const imgDiv = document.querySelector('#resultImg');
-  var imgURL = "../images/image-" + point + '.png';
+  var imgURL=''
+
   resultImg.src = imgURL;
   resultImg.alt = point;
   resultImg.classList.add('img-fluid');
-  imgDiv.appendChild(resultImg);
+//  imgDiv.appendChild(resultImg);
 
   const resultDesc = document.querySelector('.resultDesc');
-  resultDesc.innerHTML = infoList[point].desc;
+//  resultDesc.innerHTML = infoList[point].desc;
+if(point==0){
+  document.getElementById("checkResult").href = "/군산/";
+  }
+  if(point==0){
+  document.getElementById("checkResult").href = "/제주/";
+  }
+else if(point==1){
+  document.getElementById("checkResult").href = "/통영/"
+}
+else if(point==2){
+  document.getElementById("checkResult").href = "/여수/"
+}
+else if(point==3){
+  document.getElementById("checkResult").href = "/거제/"
+}
+else if(point==4){
+  document.getElementById("checkResult").href = "/군산/"
+}
+else if(point==5){
+  document.getElementById("checkResult").href = "/인천/"
+}
+else if(point==6){
+  document.getElementById("checkResult").href = "/속초/"
+}
+else if(point==7){
+  document.getElementById("checkResult").href = "/포항/"
+}
+else if(point==8){
+  document.getElementById("checkResult").href = "/강릉/"
+}
+else if(point==9){
+  document.getElementById("checkResult").href = "/서울/"
+}
+else if(point==10){
+  document.getElementById("checkResult").href = "/가평/"
+}
+else if(point==11){
+  document.getElementById("checkResult").href = "/전주/"
+}
+else if(point==12){
+  document.getElementById("checkResult").href = "/경주/"
+}
 }
 
 function goResult(){
@@ -43,11 +84,17 @@ function goResult(){
     setResult();
 }
 
-function addAnswer(answerText, qIdx, idx){
+function addAnswer(imgname, answerText, qIdx, idx){
   var a = document.querySelector('.answerBox');
   var answer = document.createElement('button');
-  var image = document.createElement('img');
-  image.setAttribute("src","../images/계곡.jpg");
+  var div = document.createElement('div');
+  var img = document.createElement('img');
+
+  div.classList.add('imgdiv');
+  div.style.width = "80%";
+  div.style.margin = "0 auto";
+  img.style.width="30%";
+
   answer.classList.add('answerList');
   answer.classList.add('my-3');
   answer.classList.add('py-3');
@@ -55,14 +102,22 @@ function addAnswer(answerText, qIdx, idx){
   answer.classList.add('fadeIn');
 
   a.appendChild(answer);
+  a.appendChild(div);
+  div.appendChild(img);
+
   answer.innerHTML = answerText;
+  img.src="/static/single_pages/images/" + imgname;
 
   answer.addEventListener("click", function(){
     var children = document.querySelectorAll('.answerList');
+    var divChild = document.querySelectorAll('.imgdiv');
     for(let i = 0; i < children.length; i++){
       children[i].disabled = true;
+      divChild[i].disabled = true;
       children[i].style.WebkitAnimation = "fadeOut 0.5s";
+      divChild[i].style.WebkitAnimation = "fadeOut 0.5s";
       children[i].style.animation = "fadeOut 0.5s";
+      divChild[i].style.animation = "fadeOut 0.5s";
     }
     setTimeout(() => {
       var target = qnaList[qIdx].a[idx].type;
@@ -72,6 +127,7 @@ function addAnswer(answerText, qIdx, idx){
 
       for(let i = 0; i < children.length; i++){
         children[i].style.display = 'none';
+        divChild[i].style.display = 'none';
       }
       goNext(++qIdx);
     },450)
@@ -87,11 +143,13 @@ function goNext(qIdx){
   var q = document.querySelector('.qBox');
   q.innerHTML = qnaList[qIdx].q;
   for(let i in qnaList[qIdx].a){
-    addAnswer(qnaList[qIdx].a[i].answer, qIdx, i);
+    addAnswer(qnaList[qIdx].a[i].img,  qnaList[qIdx].a[i].answer, qIdx, i);
   }
   var status = document.querySelector('.statusBar');
   status.style.width = (100/endPoint) * (qIdx+1) + '%';
 }
+
+
 
 function begin(){
   main.style.WebkitAnimation = "fadeOut 1s";

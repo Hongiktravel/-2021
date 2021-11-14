@@ -20,7 +20,7 @@ def about_me(request):
 def 군산(request):
     return render(
         request,
-        'single_pages/군산.html'
+        'single_pages/가평.html'
     )
 def 인천(request):
     return render(
