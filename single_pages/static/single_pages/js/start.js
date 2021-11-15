@@ -87,26 +87,49 @@ function goResult(){
 function addAnswer(imgname, answerText, qIdx, idx){
   var a = document.querySelector('.answerBox');
   var answer = document.createElement('button');
-  var div = document.createElement('div');
+  var div1 = document.createElement('div');
+  var div2 = document.createElement("div");
+  var imgDiv  = document.createElement('div');
   var img = document.createElement('img');
 
-  div.classList.add('imgdiv');
-  div.style.width = "80%";
-  div.style.margin = "0 auto";
-  img.style.width="30%";
+  imgDiv .classList.add('imgdiv');
+  imgDiv .style.width = "80%";
+  imgDiv .style.margin = "0 auto";
+  img.style.width="100%";
+  a.style.display = "flex";
 
   answer.classList.add('answerList');
   answer.classList.add('my-3');
   answer.classList.add('py-3');
   answer.classList.add('mx-auto');
   answer.classList.add('fadeIn');
+  div1.classList.add('div1');
+  div2.classList.add('div2');
 
-  a.appendChild(answer);
-  a.appendChild(div);
-  div.appendChild(img);
+  if(idx == 0){
+    a.appendChild(div1);
+    a.appendChild(div2);
+  }
+
+  var d1 = document.querySelector('.div1');
+  var d2 = document.querySelector('.div2');
+
+  if(idx%2 == 0){
+    d1.appendChild(answer);
+    d1.appendChild(imgDiv);
+    imgDiv.appendChild(img);
+  }else {
+    d2.appendChild(answer)
+    d2.appendChild(imgDiv)
+    imgDiv.appendChild(img);
+  }
 
   answer.innerHTML = answerText;
+    if(imgname==""){
+    imgname="basic.jpg"
+  }
   img.src="/static/single_pages/images/" + imgname;
+
 
   answer.addEventListener("click", function(){
     var children = document.querySelectorAll('.answerList');
