@@ -26,7 +26,9 @@
     <div class="container mt-4">
         <div class="row">
             <div class="col-lg-8 mt-4">
-                <h1><font size="15em">제주특별자치도</font></h1>
+                <h1><font size="15em">제주특별자치도</font><a id="kakao-link-btn" href="javascript:kakaoShare()">
+    	<img src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
+    </a></h1>
                 <p>
                     #절물자연휴양림 #대포 주상절리 #정방폭포 #동문시장 #토종흑염소목장 #제트 <br>
                     #애월빵공장 #무지개해안도로 #해변 #돔베고기 #루지 #해녀해물다찌
@@ -192,4 +194,38 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
 </body>
+<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+<script type="text/javascript">
+  // SDK를 초기화 합니다. 사용할 앱의 JavaScript 키를 설정해 주세요.
+  Kakao.init('105bc6e609375c497054e99a6211706a');
+
+  // SDK 초기화 여부를 판단합니다.
+  console.log(Kakao.isInitialized());
+
+  function kakaoShare() {
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '너도 같이 여행을 떠나볼래?',
+        description: '끝이 보이는 코로나! 국내 여행을 떠나보자! ',
+        imageUrl: 'https://raw.githubusercontent.com/huiji0315/travel_recommendation/master/img/main.png',
+        link: {
+          mobileWebUrl: 'http://127.0.0.1:8000',
+          webUrl: 'http://127.0.0.1:8000',
+        },
+      },
+      buttons: [
+        {
+          title: '웹으로 보기',
+          link: {
+            mobileWebUrl: 'http://127.0.0.1:8000',
+            webUrl: 'http://127.0.0.1:8000',
+          },
+        },
+      ],
+      // 카카오톡 미설치 시 카카오톡 설치 경로이동
+      installTalk: true,
+    })
+  }
+</script>
 </html>

@@ -1,9 +1,10 @@
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
+const qna0 = document.querySelector("#qna0");
 const result = document.querySelector("#result");
 
 const endPoint = 7;
-const select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+const select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0];
 
 function calResult(){
   console.log(select);
@@ -84,7 +85,7 @@ function goResult(){
     setResult();
 }
 
-function addAnswer(imgname, answerText, qIdx, idx){
+function addAnswer(imgname, answerText, qIdx, idx, num){
   var a = document.querySelector('.answerBox');
   var answer = document.createElement('button');
   var div1 = document.createElement('div');
@@ -143,7 +144,7 @@ function addAnswer(imgname, answerText, qIdx, idx){
       divChild[i].style.animation = "fadeOut 0.5s";
     }
     setTimeout(() => {
-      var target = qnaList[qIdx].a[idx].type;
+      var target = qnaList[num][qIdx].a[idx].type;
       for(let i = 0; i < target.length; i++){
         select[target[i]] += 1;
       }
@@ -152,21 +153,21 @@ function addAnswer(imgname, answerText, qIdx, idx){
         children[i].style.display = 'none';
         divChild[i].style.display = 'none';
       }
-      goNext(++qIdx);
+      goNext(++qIdx, num);
     },450)
   }, false);
 }
 
-function goNext(qIdx){
+function goNext(qIdx, num){
   if(qIdx === endPoint){
     goResult();
     return;
   }
 
   var q = document.querySelector('.qBox');
-  q.innerHTML = qnaList[qIdx].q;
-  for(let i in qnaList[qIdx].a){
-    addAnswer(qnaList[qIdx].a[i].img,  qnaList[qIdx].a[i].answer, qIdx, i);
+  q.innerHTML = qnaList[num][qIdx].q;
+  for(let i in qnaList[num][qIdx].a){
+    addAnswer(qnaList[num][qIdx].a[i].img,  qnaList[num][qIdx].a[i].answer, qIdx, i,num);
   }
   var status = document.querySelector('.statusBar');
   status.style.width = (100/endPoint) * (qIdx+1) + '%';
@@ -174,17 +175,62 @@ function goNext(qIdx){
 
 
 
-function begin(){
-  main.style.WebkitAnimation = "fadeOut 1s";
-  main.style.animation = "fadeOut 1s";
+function begin(num){
+  qna0.style.WebkitAnimation = "fadeOut 1s";
+  qna0.style.animation = "fadeOut 1s";
   setTimeout(() => {
     qna.style.WebkitAnimation = "fadeIn 1s";
     qna.style.animation = "fadeIn 1s";
     setTimeout(() => {
-      main.style.display = "none";
+      qna0.style.display = "none";
       qna.style.display = "block"
     }, 450)
     let qIdx = 0;
-    goNext(qIdx);
+    goNext(qIdx,num);
+  }, 450);
+}
+
+function go(){
+  main.style.WebkitAnimation = "fadeOut 1s";
+  main.style.animation = "fadeOut 1s";
+  setTimeout(() => {
+    qna0.style.WebkitAnimation = "fadeIn 1s";
+    qna0.style.animation = "fadeIn 1s";
+    setTimeout(() => {
+      main.style.display = "none";
+      qna0.style.display = "block"
+    }, 450)
+
+  var a = document.querySelector('.answerBox0');
+  var q = document.querySelector('.qBox0');
+
+  q.innerHTML = qnaList0[0].q;
+  for(let i = 0; i < qnaList0[0].a.length; i++){
+    var answer = document.createElement('button');
+    var imgDiv  = document.createElement('div');
+    var img = document.createElement('img');
+    imgDiv.classList.add('imgdiv');
+    imgDiv.style.width = "80%";
+    imgDiv.style.margin = "0 auto";
+    img.style.width="100%";
+    a.style.display = "flex";
+
+    answer.classList.add('answerList');
+    answer.classList.add('my-3');
+    answer.classList.add('py-3');
+    answer.classList.add('mx-auto');
+    answer.classList.add('fadeIn');
+
+    a.appendChild(answer);
+    a.appendChild(imgDiv);
+    imgDiv.appendChild(img);
+
+    img.src="/static/single_pages/images/" + qnaList0[0].a[i].img;
+    answer.innerHTML = qnaList0[0].a[i].answer;
+
+    answer.addEventListener("click", function(){
+      begin(i);
+    })
+  }
   }, 450);
 }

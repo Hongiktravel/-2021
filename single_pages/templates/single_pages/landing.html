@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 {% load static %}
 <html lang="ko">
@@ -34,52 +35,45 @@
     <section id ="main" class="mx-auto my-5 py-5 px-3">
         <div class="container">
             <div class="row justify-content-between mb-5 pb-5">
-                <div class="col-lg-3 ">
+                <div class="col-lg-3">
 
-                    <div class="card mt-5">
-                        <div class="card-body">
-                            <h2><font size="5.5em" color="black">여행지순위</font> </h2>
-                            <p><font size="3em" color="black">1위 : 제 주</font></p>
-                            <p><font size="3em" color="black">2위 : 강 릉</font></p>
-                            <p><font size="3em" color="black">3위 : 전 주</font></p>
-                            <p><font size="3em" color="black">4위 : 부 산</font></p>
-                            <p><font size="3em" color="black">5위 : 포 항</font></p>
+                    <div class="card" style="line-height:70%">
+                        <p style="font-size:25px;">여행지순위</p>
+                        <div class="card-body" style="line-height:70%">
+                            <p style="font-size:20px;">1위 : 제 주</p>
+                            <p style="font-size:20px;">2위 : 강 릉</p>
+                            <p style="font-size:20px;">3위 : 전 주</p>
+                            <p style="font-size:20px;">4위 : 부 산</p>
+                            <p style="font-size:20px;">5위 : 포 항</p>
                         </div>
                     </div>
 
-                    <div class="card mt-3">
-                        <div class="card-body">
-                            <h2><font size="5.5em" color="black">해시태그순위</font> </h2>
-                            <p><font size="3em" color="black">1위 : 가족여행</font></p>
-                            <p><font size="3em" color="black">2위 : 차박</font></p>
-                            <p><font size="3em" color="black">3위 : 힐링</font></p>
-                            <p><font size="3em" color="black">4위 : 맛집</font></p>
-                            <p><font size="3em" color="black">5위 : 커플여행</font></p>
+                    <div class="card mt-5" style="line-height:70%">
+                        <p style="font-size:25px;">해시태그순위</p>
+                        <div class="card-body" style="line-height:70%">
+                            <p style="font-size:19px;">1위 : 가족여행</p>
+                            <p style="font-size:19px;">2위 : 맛집</p>
+                            <p style="font-size:19px;">3위 : 힐링</p>
+                            <p style="font-size:19px;">4위 : 차박</p>
+                            <p style="font-size:18px;">5위 : 커플여행</p>
                         </div>
-
                     </div>
-
                 </div>
                 <div class="col-lg-7 mx-5 pb-5">
-                    <h1>나에게 맞는 여행지 추천</h1>
+                    <p>당신에게 꼭 맞는 여행지를 추천해드리겠습니다! <br></p>
 
-                    <p>당신에게 꼭 맞는 여행지를 추천해드리겠습니다! <br>
-
-                        아래 시작하기 버튼을 눌러 시작해 주십시오.</p>
-                    <img src="{% static 'single_pages/images/landing.png' %}" width="500" height="500" >
                     <div style="text-align: center;">
-                        <button type="button" class="btn btn-outline-danger my-10 " onclick="js:begin()">시작하기</button>
+                        <button type="button" class="btn btn-outline-danger my-10 " onclick="js:go()">시작하기</button>
                     </div>
+                    <img src="{% static 'single_pages/images/landing.png' %}" width="400" height="400" >
                 </div>
-
-
             </div>
-
         </div>
 
 
 
     </section>
+
     <section id="qna" class="pb-5">
         <div class="status mx-auto mt-5">
             <div class="statusBar">
@@ -97,11 +91,30 @@
 
 
     </section>
+    <section id="qna0" class="pb-5" style="display: none;">
+        <div class="status mx-auto mt-5">
+            <div class="statusBar">
+            </div>
+        </div>
+        <div class="qBox0 qBox my-5 py-5 mx-auto">
+
+        </div>
+        <div class="answerBox0">
+
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+    </section>
 
     <section id="result" class="mx-auto my-5 py-5 px-3">
-
+        <a id="kakao-link-btn" href="javascript:kakaoShare()">
+    	<img src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
+    </a>
         <h1>당신의 여행지는?!</h1>
-        <a id="checkResult" type="button" href="" class="btn btn-info btn-sm float-right"></a>
+        <a id="checkResult" type="button" href="" class="btn btn-info btn-sm float-right">결과 확인하기</a>
         <!--      <div class="resultname">-->
 
         <!--      </div>-->
@@ -112,6 +125,7 @@
 
         <!--      </div>-->
         <!--      <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:setShare()">공유하기</button>-->
+
     </section>
     <script src="{% static 'single_pages/js/start.js' %}"></script>
     <script src="{% static 'single_pages/js/share.js' %}"></script>
@@ -125,4 +139,6 @@
 
 
 </body>
+
+
 </html>

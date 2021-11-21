@@ -32,6 +32,12 @@
   border-radius: 20px;
 }
 
+.img {
+  width: 700px;
+  height: 467px;
+  object-fit: cover;
+}
+
 .statusBar {
   height: 100%;
   border-radius: 20px;
